@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 150px; 
+    color: white; 
+}
+
+h1 {
+    margin-bottom: 20px; /* Jarak antara h1 dengan datetime */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 1024px;
+    border-radius: 8px;
+    margin: 16px;
+    background: #e6eaed;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.check-button,
+.undo-button {
+    margin-left: auto; 
+    margin-right: 20px; 
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 18;
+    font-weight: lighter;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+.card-header {
+    background-color:#e6eaed;
+    color: white;
+    font-weight: bold;
+}
+
+.list-group-item {
+    border-color: #e6eaed;
+}
+
+.list-group-item:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+input[type=text],
+input[type=date] {
+    font-family: Raleway;
+    background: #F5F1FF;
+    border: 2px solid #e6eaed;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.btn-submit {
+    width: fit-content;
+    border: none;
+    font-family: Raleway;
+    border-radius: 16px;
+    padding: 12px 24px;
+    border:2px solid #e6eaed;
+    color: black;
+    font-size: 24px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-submit:hover{
+    background: #4c1ccf;
+    color: white;
+}
+
+input[type=text],
+input[type=date],
+.btn-submit:focus{
+    outline: none;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+.check-button,
+.undo-button {
+    margin-right: 5px; /* Memberikan jarak antara tombol "check" dan "undo" */
+}
+
+.edit-button,
+.trash-button {
+    margin-right: 5px; /* Memberikan jarak antara tombol "edit" dan "trash" */
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+}
